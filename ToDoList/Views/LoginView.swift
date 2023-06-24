@@ -9,8 +9,7 @@ import SwiftUI
 
 struct LoginView: View {
     
-    @State var email = ""
-    @State var password = ""
+    @StateObject var viewModel = LoginViewViewModel()
 
     var body: some View {
         NavigationView{
@@ -19,20 +18,25 @@ struct LoginView: View {
                 HeaderView(title: "To Do List", subTitle: "List It Do It", angle: 15, background: .pink)
                 //Login Form
                 Form{
-                    TextField("Email Address", text:  $email)
-                        .textFieldStyle(RoundedBorderTextFieldStyle())
-                    SecureField("Password", text: $password)
-                        .textFieldStyle(RoundedBorderTextFieldStyle())
-                    Button{
-                        //Action: attempt login
-                    }label: {
-                        ZStack{
-                            RoundedRectangle(cornerRadius: 10).foregroundColor(Color.blue)
-                            
-                            Text("Log In")
-                                .foregroundColor(Color.white).bold()
-                        }
+                    if !viewModel.errorMessage.isEmpty{
+                        Text(viewModel.errorMessage)
+                            .foregroundColor(.red)
                     }
+                    TextField("Email Address", text:  $viewModel.email)
+                        .textFieldStyle(RoundedBorderTextFieldStyle())
+                        .autocorrectionDisabled()
+                        .autocapitalization(.none)
+                                            
+                    SecureField("Password", text: $viewModel.password)
+                        .textFieldStyle(RoundedBorderTextFieldStyle())
+                        .autocorrectionDisabled()
+                        .autocapitalization(.none)
+                    
+                    TLButton(btnText: "Log In", backgoundColor: .blue){
+                        viewModel.login()
+                    }
+                    .padding()
+                
                 }.offset(y: -50)
                 
                 //Create Account

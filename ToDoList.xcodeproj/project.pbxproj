@@ -16,6 +16,8 @@
 		453AEBB42A45C70200C1A099 /* ToDoListUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 453AEBB32A45C70200C1A099 /* ToDoListUITestsLaunchTests.swift */; };
 		45AF2FC12A4635E90073DBB4 /* TodoListItemViewViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 45AF2FC02A4635E90073DBB4 /* TodoListItemViewViewModel.swift */; };
 		45AF2FC32A4649650073DBB4 /* HeaderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 45AF2FC22A4649650073DBB4 /* HeaderView.swift */; };
+		45AF2FC52A4700680073DBB4 /* TLButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 45AF2FC42A4700680073DBB4 /* TLButton.swift */; };
+		45AF2FC72A471F0B0073DBB4 /* Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 45AF2FC62A471F0B0073DBB4 /* Extensions.swift */; };
 		45D2351B2A45ECCE0020036B /* FirebaseAuth in Frameworks */ = {isa = PBXBuildFile; productRef = 45D2351A2A45ECCE0020036B /* FirebaseAuth */; };
 		45D2351D2A45ECCE0020036B /* FirebaseFirestore in Frameworks */ = {isa = PBXBuildFile; productRef = 45D2351C2A45ECCE0020036B /* FirebaseFirestore */; };
 		45D2351F2A45ECCE0020036B /* FirebaseFirestoreSwift in Frameworks */ = {isa = PBXBuildFile; productRef = 45D2351E2A45ECCE0020036B /* FirebaseFirestoreSwift */; };
@@ -66,6 +68,8 @@
 		453AEBB32A45C70200C1A099 /* ToDoListUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ToDoListUITestsLaunchTests.swift; sourceTree = "<group>"; };
 		45AF2FC02A4635E90073DBB4 /* TodoListItemViewViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TodoListItemViewViewModel.swift; sourceTree = "<group>"; };
 		45AF2FC22A4649650073DBB4 /* HeaderView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HeaderView.swift; sourceTree = "<group>"; };
+		45AF2FC42A4700680073DBB4 /* TLButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TLButton.swift; sourceTree = "<group>"; };
+		45AF2FC62A471F0B0073DBB4 /* Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Extensions.swift; sourceTree = "<group>"; };
 		45D235202A45F4660020036B /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		45D235262A45F92B0020036B /* ProfileView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileView.swift; sourceTree = "<group>"; };
 		45D235282A45F9520020036B /* TodoListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TodoListView.swift; sourceTree = "<group>"; };
@@ -179,6 +183,7 @@
 				45D2352E2A45F99C0020036B /* RegisterView.swift */,
 				45D235302A45F9ED0020036B /* TodoListItemView.swift */,
 				45AF2FC22A4649650073DBB4 /* HeaderView.swift */,
+				45AF2FC42A4700680073DBB4 /* TLButton.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -212,6 +217,7 @@
 				453AEB962A45C6FB00C1A099 /* ToDoListApp.swift */,
 				453AEB9A2A45C70100C1A099 /* Assets.xcassets */,
 				45D235202A45F4660020036B /* GoogleService-Info.plist */,
+				45AF2FC62A471F0B0073DBB4 /* Extensions.swift */,
 			);
 			path = Others;
 			sourceTree = "<group>";
@@ -362,6 +368,7 @@
 				45D235412A45FAEF0020036B /* RegisterViewViewModel.swift in Sources */,
 				45D235372A45FA8E0020036B /* MainViewViewModel.swift in Sources */,
 				453AEB992A45C6FB00C1A099 /* MainView.swift in Sources */,
+				45AF2FC52A4700680073DBB4 /* TLButton.swift in Sources */,
 				45D235292A45F9520020036B /* TodoListView.swift in Sources */,
 				45D235392A45FA9D0020036B /* ProfileViewViewModel.swift in Sources */,
 				45D2352F2A45F99C0020036B /* RegisterView.swift in Sources */,
@@ -369,6 +376,7 @@
 				45D2353B2A45FAAB0020036B /* TodoListViewViewModel.swift in Sources */,
 				45D235332A45FA4E0020036B /* User.swift in Sources */,
 				45D2353F2A45FAE10020036B /* LoginViewViewModel.swift in Sources */,
+				45AF2FC72A471F0B0073DBB4 /* Extensions.swift in Sources */,
 				45D235312A45F9ED0020036B /* TodoListItemView.swift in Sources */,
 				453AEB972A45C6FB00C1A099 /* ToDoListApp.swift in Sources */,
 				45D2352B2A45F9780020036B /* NewItemView.swift in Sources */,
