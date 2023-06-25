@@ -14,4 +14,8 @@ class TodoListViewViewModel: ObservableObject{
     
     
     init(){}
+    
+    func delete(id: String){
+        
+    }
 }
